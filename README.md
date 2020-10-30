@@ -5,7 +5,9 @@ since I am using an in-memory database instead of a real database, and it utiliz
 
 ## The frontend is built with React, but I have not included it in the reposistory because I can't figure out the submodule problem. To build a frontend, there are only 2 calls you need to know:
 
-`http://localhost:8080/api/v1/user-profile/${userProfileId}/image/upload` is the url to upload an image (assuming you're hosting it on port 8080), and
+`http://localhost:8080/api/v1/user-profile/${userProfileId}/image/upload` is the url to upload an image (assuming you're hosting it on port 8080).
+
+
 `http://localhost:8080/api/v1/user-profile/${userProfile.userProfileId}/image/download` is the url to download/display an image (assuming you're hosting it on port 8080).
 
 I recommend using React-Dropzone for the frontend, and Axios to make the API calls cleaner and much easier to understand.
