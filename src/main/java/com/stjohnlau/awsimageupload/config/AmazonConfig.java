@@ -15,13 +15,13 @@ public class AmazonConfig {
     @Bean
     public AmazonS3 s3() { //initalize s3 bucket
         AWSCredentials awsCredentials = new BasicAWSCredentials(
-                "AKIAJY4PRHET6JPCK74A",
-                "DrRjKOFVokfzxf6BaXyJbJQuL8bBa7XrduBAszv4"
+                "your key",
+                "your key"
         );
 
         AmazonS3 s3 = AmazonS3Client
                 .builder()
-                .withRegion("us-east-2")
+                .withRegion("us-east-2") //your own bucket region
                 .withCredentials(new AWSStaticCredentialsProvider(awsCredentials))
                 .build();
         /*return AmazonS3ClientBuilder <- This way doesn't work for some reason
