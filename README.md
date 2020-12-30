@@ -3,7 +3,7 @@
 This is a __Spring Boot__ project that allows you to upload images for a user and then displays the images on the same site. It's an almost-full stack project,
 since I am using an in-memory database instead of a real database, and it utilizes Spring Boot and AWS S3 Buckets.
 
-## The frontend is built with React, but I have not included it in the reposistory because I can't figure out the submodule problem. To build a frontend, there are only 2 calls you need to know:
+## The frontend is built with React, but I have not included it in the repository because I can't figure out the submodule problem. To build a frontend, there are only 2 calls you need to know:
 
 `http://localhost:8080/api/v1/user-profile/${userProfileId}/image/upload` is the url to upload an image (assuming you're hosting it on port 8080).
 
